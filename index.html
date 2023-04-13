@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header">
+        <div class="inner"></div>
+        <div class="header-main">
+          <a href="/" class="header-main__logo"></a>
+          <div class="header-search">
+            <div class="search-form">
+              <div class="search-form__field">
+                <input
+                  id="search__input"
+                  type="text"
+                  class="search-form__input js-search-input"
+                  value=""
+                  placeholder="Search Flickr"
+                  data-action="focus->search#show keyup.>search#search"
+                  data-search-target="input" />
+                <select id="size_select">
+                  <option value="b">Large</option>
+                  <option value="z">Medium</option>
+                  <option value="n">Small</option>
+                </select>
+                <label for="resultValue" id="resultValueLabel">
+                  Number of results
+                </label>
+                <input
+                  type="text"
+                  name=""
+                  id="resultValue"
+                  inputmode="numeric"
+                  placeholder="100 results maximum" />
+                <button
+                  class="search-form__button"
+                  type="submit"
+                  onclick="searchInput()">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header-main__right"></div>
+        </div>
+      </header>
+      <section id="content"></section>
+      <footer id="footer"></footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
